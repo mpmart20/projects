@@ -1,0 +1,18 @@
+{
+  "coding": [
+    "Write a Python function to check if a number is prime",
+    "Explain what a closure is in JavaScript with an example"
+  ],
+  "reasoning": [
+    "What is the trolley problem and why does it matter in AI ethics?",
+    "If all bloops are razzles and all razzles are lazzles, are all bloops lazzles?"
+  ],
+  "creative": [
+    "Write a haiku about machine learning",
+    "Describe the color blue to someone who has never seen color"
+  ],
+  "analysis": [
+    "What are the main tradeoffs between SQL and NoSQL databases?",
+    "Summarize the key differences between supervised and unsupervised learning"
+  ]
+}

@@ -1,0 +1,23 @@
+name: research_and_summarize
+description: Research a topic and generate a structured summary
+version: "1.0"
+
+steps:
+  - name: search_topic
+    tool: web_search
+    params:
+      query: "{{ topic }}"
+      max_results: 5
+    continue_on_error: false
+
+  - name: summarize_findings
+    tool: claude_complete
+    params:
+      prompt: "Summarize these search results: {{ steps.search_topic.results }}"
+      max_tokens: 500
+
+  - name: generate_report
+    tool: claude_complete
+    params:
+      prompt: "Create a structured report from: {{ steps.summarize_findings.output }}"
+      max_tokens: 1000
